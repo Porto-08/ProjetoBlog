@@ -1,0 +1,27 @@
+<div class="jumbotron bg-dark text-light">
+  <h1 class="display-4">Bem vindo ao nosso blog!</h1>
+  <p class="lead">Aqui você encontra uma variedade de assuntos! Cadastre-se já!</p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-outline-warning btn-lg" href="/usuarios/login" role="button">Crie uma conta gratis!</a>
+  </p>
+</div>
+
+<h2>Postagens Recentes</h2>
+
+<hr>
+
+{{#each postagens}}
+    <div class="card mt-4 mb-2">
+        <div class="card-body bg-dark text-light">
+            <h3>{{titulo}}</h3>
+            <em><small>{{descricao}}</small></em>
+            <br>
+            <a href="/postagem/{{slug}}"><button class="btn mt-3 btn-outline-warning btn-sm">Leia Mais!</button></a>
+            <hr>
+            <small>Categoria: {{categoria.nome}}</small> <br>
+        </div>
+    </div>
+{{else}}
+    <h5>Nenhuma Postagem, ainda. Volte mais tarde!</h5>
+{{/each}}

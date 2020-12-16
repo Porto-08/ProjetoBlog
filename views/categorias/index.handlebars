@@ -1,0 +1,12 @@
+    <h2>Todas nossa Categorias de Posts: </h2>
+    <small>Aqui você pode filtrar pelas categorias que mais deseja!</small>
+    <hr>
+    <div class="card">
+        {{#each categorias}}
+            <div class="card-header bg-dark ">
+                <a href="/categorias/{{slug}}" class="nav-link text-light"><h5>{{nome}}</h5></a>
+            </div>
+        {{else}}
+            <h3 class="p-3">No momento não existe categorias cadastradas, volte mais tarde!</h3>
+        {{/each}}
+    </div>

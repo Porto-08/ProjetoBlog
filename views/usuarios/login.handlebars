@@ -1,0 +1,20 @@
+
+
+<div class="card">
+    <div class="card-header bg-warning text-dark">
+        <h1>Entrar no Blog</h1>
+        <small>Faça seu login para ficar por dentro de tudo que acontece!</small>
+    </div>
+        
+    <form action="/usuarios/login" method="POST">            
+        <div class="card-body bg-dark text-light">
+            <label for="acesso">Email:</label>
+                <input type="email" name="email" id="acesso" class="form-control" autofocus required>
+
+            <label for="senhas">Senha: </label>
+                <input type="password" name="senha" id="senhas" class="form-control" required>
+
+            <button class="btn btn-outline-light mt-4">Entrar</button>
+        </div>
+    </form>
+</div>
